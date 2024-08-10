@@ -20,7 +20,7 @@ const App = () => {
                         if(currentDate.getMonth() + 2 === 13){
                             text = `${currentDate.getFullYear() + 1}/${1}/${1}`
                         }else if(currentDate.getMonth() + 2 === 0){
-                            text = `${currentDate.getFullYear() + 1}/${12}/${last_day(new Date().getFullYear() , new Date().getMonth())}`
+                            text = `${currentDate.getFullYear() - 1}/${12}/${last_day(new Date().getFullYear() , new Date().getMonth())}`
                         }
                         let d = new Date(`${text}`)
                         setCurrentDate(d)
